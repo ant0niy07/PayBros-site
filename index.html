@@ -7,51 +7,69 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      background: #000;
+      color: #fff;
       text-align: center;
       padding: 40px;
       margin: 0;
     }
 
-    img {
+    img.logo {
       width: 180px;
       margin-bottom: 25px;
     }
 
     h1 {
-      margin-bottom: 10px;
-      color: #4f00ff;
+      margin-bottom: 20px;
+      color: #ffffff;
     }
 
-    .button {
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .icons a {
       display: inline-block;
-      margin: 10px;
-      padding: 14px 26px;
-      background: white;
-      color: #4f00ff;
-      border: 2px solid #4f00ff;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 12px;
-      transition: background 0.3s, color 0.3s;
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      background: #1a1a1a;
+      padding: 10px;
     }
 
-    .button:hover {
-      background: #4f00ff;
-      color: white;
+    .icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .icons img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <img src="logo.jpg" alt="PayBros Partner logo" />
+  <img src="logo.jpg" alt="PayBros Partner logo" class="logo"/>
   <h1>PayBros Partner</h1>
-  <p>Выберите действие:</p>
-  <div>
-    <a class="button" href="https://t.me/+vIB1IERtWkNhNDE0" target="_blank">Группа Telegram</a>
-    <a class="button" href="https://t.me/PayBros_auto_reply_bot" target="_blank">Бот Telegram</a>
-    <a class="button" href="https://www.tiktok.com/@paybros_partner?_t=ZS-8wjTIIhcAdj&_r=1" target="_blank">TikTok</a>
-    <a class="button" href="https://paybros.pl/" target="_blank">Сайт</a>
+  <div class="icons">
+    <a href="https://t.me/+vIB1IERtWkNhNDE0" target="_blank">
+      <img src="telegram.png" alt="Telegram Group"/>
+    </a>
+    <a href="https://paybros.pl/" target="_blank">
+      <img src="web.png" alt="Website"/>
+    </a>
+    <a href="https://t.me/PayBros_auto_reply_bot" target="_blank">
+      <img src="bot.png" alt="Telegram Bot"/>
+    </a>
+    <a href="https://www.tiktok.com/@paybros_partner?_t=ZS-8wjTIIhcAdj&_r=1" target="_blank">
+      <img src="tiktok.png" alt="TikTok"/>
+    </a>
   </div>
 </body>
 </html>
